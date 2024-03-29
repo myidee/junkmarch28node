@@ -15,5 +15,7 @@ app.post("/", function (req, res) {
     res.send("the result of this calculator is " + result);
 });
 
-app.listen(3000, function () { 
+const port = process.env.PORT || 3000;
+
+app.listen(port, function () { 
     console.log("server started on port 3000"); });
